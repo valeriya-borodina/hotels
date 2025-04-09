@@ -1,0 +1,174 @@
+/* Общие стили */
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    background-color: #22ddea23; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Вертикальное направление для flex-контейнера */
+}
+
+/* Заголовок */
+header {
+    background: #22c2eaba; /* Цвет фона заголовка */
+    color: #000000; /* Цвет текста заголовка */
+    padding: 15px 20px; /* Отступы заголовка */
+    text-align: center; /* Центрирование текста */
+}
+
+header nav {
+    margin-top: 10px; /* Отступ сверху для навигации */
+}
+
+header nav a {
+    color: #000000; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 15px; /* Горизонтальные отступы между ссылками */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Основной контент */
+main {
+    flex: 1; /* Позволяет основному контенту занимать оставшееся пространство */
+    padding: 20px; /* Отступы основного контента */
+}
+
+h1, h2 {
+    color: #000000; /* Цвет заголовков */
+}
+
+/* Стили для списка отелей */
+#searchResults {
+    background: #fff; /* Цвет фона результатов поиска */
+    padding: 20px; /* Отступы для результатов поиска */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+#hotelList {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+#hotelList li {
+    border-bottom: 1px solid #ddd; /* Нижняя граница для каждого элемента списка */
+    padding: 15px 0; /* Вертикальные отступы для элементов списка */
+}
+
+#hotelList li:last-child {
+    border-bottom: none; /* Убираем нижнюю границу для последнего элемента */
+}
+
+
+
+/* Подвал */
+footer {
+    text-align: center; /* Центрирование текста в подвале */
+    padding: 15px 0; /* Отступы подвала */
+    background: #22c2eaba; /* Цвет фона подвала */
+    color: #000000; /* Цвет текста подвала */
+}
+/* Стили для формы */
+#contactForm {
+    background: #fff; /* Цвет фона формы */
+    padding: 20px; /* Отступы внутри формы */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 20px auto; /* Центрирование формы */
+}
+
+/* Заголовок формы */
+#contactForm h2 {
+    text-align: center; /* Центрирование заголовка */
+    color: #22c2eaba; /* Цвет заголовка */
+}
+
+/* Метки */
+label {
+    display: block; /* Отображение меток как блочных элементов */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+    font-weight: bold; /* Жирный шрифт для меток */
+}
+
+/* Поля ввода и текстовая область */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ширина 100% */
+    padding: 10px; /* Отступы внутри полей */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Цвет границы */
+    border-radius: 4px; /* Закругленные углы */
+    box-sizing: border-box; /* Учет отступов и границ в ширине */
+}
+
+/* Поля ввода при фокусе */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #22c2eaba; /* Цвет границы при фокусе */
+    outline: none; /* Убираем обводку */
+}
+
+/* Кнопка отправки */
+/* Стили для формы */
+#contactForm {
+    background: #fff; /* Цвет фона формы */
+    padding: 20px; /* Отступы внутри формы */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 20px auto; /* Центрирование формы */
+}
+
+/* Заголовок формы */
+#contactForm h2 {
+    text-align: center; /* Центрирование заголовка */
+    color: #22c2eaba; /* Цвет заголовка */
+}
+
+/* Метки */
+label {
+    display: block; /* Отображение меток как блочных элементов */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+    font-weight: bold; /* Жирный шрифт для меток */
+}
+
+/* Поля ввода и текстовая область */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ширина 100% */
+    padding: 10px; /* Отступы внутри полей */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Цвет границы */
+    border-radius: 4px; /* Закругленные углы */
+    box-sizing: border-box; /* Учет отступов и границ в ширине */
+}
+
+/* Поля ввода при фокусе */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF; /* Цвет границы при фокусе */
+    outline: none; /* Убираем обводку */
+}
+
+/* Кнопка отправки */
+button {
+    background-color: #0c89a8ba; /* Цвет фона кнопки */
+    color: rgb(0, 0, 0); /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 15px; /* Отступы кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    width: 100%; /* Ширина кнопки 100% */
+    font-size: 16px; /* Размер шрифта кнопки */
+}
